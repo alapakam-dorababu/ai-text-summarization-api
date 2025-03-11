@@ -111,7 +111,7 @@ The AI-Powered Text Summarization API provides concise summaries of text input u
 
 ### Database Migrations
 
-See the full Alembic setup guide in [Database Migrations with Alembic ](migrations/README).
+See the full Alembic setup guide in [Database Migrations with Alembic ](migrations/README.md).
 
 
 ## Usage
