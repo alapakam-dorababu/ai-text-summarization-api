@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+ollama
+pypdf
+python-docx
+beautifulsoup4
+requests
+redis
+python-multipart
+pyjwt
+bcrypt==4.0.1
+passlib[bcrypt]
+sqlmodel 
+alembic

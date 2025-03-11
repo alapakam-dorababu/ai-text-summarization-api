@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  summarization-api:
+    build: .
+    container_name: summarization-api
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app # Mount the entire project directory
+      - ollama_data:/root/.ollama
+    depends_on:
+      - redis # Ensures Redis starts before this service
+
+  redis:
+    image: redis:alpine # Uses a lightweight Redis image
+    container_name: redis
+    restart: always
+    ports:
+      - "6379:6379" # Exposes Redis on port 6379
+    volumes:
+      - redis_data:/data # Persist Redis data
+
+volumes:
+  ollama_data:
+  redis_data: # Volume for Redis persistence
