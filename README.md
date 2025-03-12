@@ -110,7 +110,3 @@ curl -X POST "http://localhost:8000/summarize/text" \
 
 ## License
 This project is licensed under the MIT License.
-
----
-
-Feel free to update this `README.md` with your repository URL and any additional details specific to your deployment setup!
