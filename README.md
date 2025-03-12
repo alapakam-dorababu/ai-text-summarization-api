@@ -19,12 +19,10 @@ The AI-Powered Text Summarization API provides concise summaries of text input u
 ## Technology Stack
 - **Backend**: FastAPI (Python)
 - **LLMs**: Ollama (Large Language Models)
-- **Processing Framework**: LangChain
 - **Database**: SQLite (for development) / PostgreSQL (for production)
 - **Cache**: Redis
 - **Authentication**: JWT (JSON Web Token)
 - **Containerization**: Docker Compose
-- **Deployment**: AWS / DigitalOcean / Any cloud provider
 
 ## System Architecture
 ### High-Level Flow
@@ -63,19 +61,6 @@ The AI-Powered Text Summarization API provides concise summaries of text input u
 - Uses CORS policies to control access.
 - Encrypts stored data and API keys where applicable.
 
-## Deployment & Scalability
-- Uses Docker Compose for containerized deployment.
-- Deploys using AWS EC2, DigitalOcean, or Kubernetes.
-- Optimizes database performance with PostgreSQL indexing.
-- Scales Redis caching for better API response times.
-- Implements logging & monitoring with tools like Prometheus & Grafana.
-
-## Future Enhancements
-- Support for additional file formats (Word, HTML, etc.).
-- Advanced summarization settings (bullet points, custom length, etc.).
-- Integration with messaging platforms (Slack, Telegram bots).
-- API analytics and dashboard for monitoring usage.
-
 ## Getting Started
 ### Prerequisites
 - Python 3.10+
@@ -87,7 +72,7 @@ The AI-Powered Text Summarization API provides concise summaries of text input u
 ### Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/ai-text-summarization-api.git
+   git clone https://github.com/alapakam-dorababu/ai-text-summarization-api.git
    cd ai-text-summarization-api
    ```
 2. Install dependencies:
